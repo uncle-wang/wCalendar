@@ -1,4 +1,4 @@
-# wCalendar
+# wCalendar(just for practicing)
 a calendar plugin
 
 wCalendar依赖于jQuery库
