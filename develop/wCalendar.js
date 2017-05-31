@@ -265,25 +265,25 @@ var wCalendar = function() {
 			});
 			calendarEle.find('.start_box .cal_month .turn_left').click(function() {
 
-				currentPageMonth.startMonth.setMonth(currentPageMonth.startMonth.getMonth() - 1);
+				currentPageMonth.startMonth.setMonth(currentPageMonth.startMonth.getMonth() - 1, 1);
 				_updateCalendarItems();
 				return false;
 			});
 			calendarEle.find('.start_box .cal_month .turn_rigt').click(function() {
 
-				currentPageMonth.startMonth.setMonth(currentPageMonth.startMonth.getMonth() + 1);
+				currentPageMonth.startMonth.setMonth(currentPageMonth.startMonth.getMonth() + 1, 1);
 				_updateCalendarItems();
 				return false;
 			});
 			calendarEle.find('.end_box .cal_month .turn_left').click(function() {
 
-				currentPageMonth.endMonth.setMonth(currentPageMonth.endMonth.getMonth() - 1);
+				currentPageMonth.endMonth.setMonth(currentPageMonth.endMonth.getMonth() - 1, 1);
 				_updateCalendarItems();
 				return false;
 			});
 			calendarEle.find('.end_box .cal_month .turn_rigt').click(function() {
 
-				currentPageMonth.endMonth.setMonth(currentPageMonth.endMonth.getMonth() + 1);
+				currentPageMonth.endMonth.setMonth(currentPageMonth.endMonth.getMonth() + 1, 1);
 				_updateCalendarItems();
 				return false;
 			});
