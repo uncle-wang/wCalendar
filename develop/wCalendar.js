@@ -356,16 +356,10 @@ var wCalendar = function() {
 			var startStamp, endStamp, startDate, endDate;
 			var paramLength = arguments.length;
 			if (paramLength === 2) {
-				startStamp = arguments[0];
-				endStamp = arguments[1];
-				startDate = new Date(startStamp);
-				endDate = new Date(endStamp);
-				startDate.setHours(0);
-				startDate.setMinutes(0);
-				startDate.setSeconds(0);
-				endDate.setHours(0);
-				endDate.setMinutes(0);
-				endDate.setSeconds(0);
+				var startTime = new Date(arguments[0]);
+				var endTime = new Date(arguments[1]);
+				startDate = new Date(startTime.getFullYear(), startTime.getMonth(), startTime.getDate());
+				endDate = new Date(endTime.getFullYear(), endTime.getMonth(), endTime.getDate());
 				startStamp = startDate.getTime();
 				endStamp = endDate.getTime();
 			}
